@@ -7,7 +7,7 @@
 Bikeshare project (with using Python)
 
 ### Description
-Describe what your project is about and what it does
+The script filters the provided bikeshare service data, based on location, month, day of the week and provides statistics about the most frequented month, day of the week, time; displays mean and total travel time; the most popular start stations, destinations and routes; about the customers of the service (type of customer, gender, most typical year of birth).
 
 ### Files used
 Include the files used
