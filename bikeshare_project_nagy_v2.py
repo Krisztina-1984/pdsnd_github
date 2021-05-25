@@ -185,6 +185,8 @@ def user_stats(df):
         print('There are:', false_data_counter, 'possibly irrealistic birth years')
 
 def view_data(city, month, day):
+    """Presents consecutive five lines of the original data."""
+
     df = pd.read_csv(CITY_DATA[city])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
@@ -217,5 +219,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    
