@@ -173,8 +173,7 @@ def user_stats(df):
         print('The youngest customer was born in:', df['Birth Year'].max())
         print('The oldest customer was born in:', df['Birth Year'].min())
         print('The most customers  were born in:', df['Birth Year'].mode()[0])
-        age_of_customer = 2017 - birth_year_of_customer
-        typical_age = age_of_customer.mode()[0]
+        typical_age = (2017 - birth_year_of_customer).mode()[0]
         print('The common age of the customers:', typical_age)
         missing_data = birth_year_of_customer.isnull().sum().sum()
         print('There is no birth data from:', missing_data, 'customers')
