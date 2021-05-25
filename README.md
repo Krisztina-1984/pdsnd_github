@@ -7,7 +7,7 @@
 Bikeshare project (with using Python)
 
 ### Description
-The script filters the provided bikeshare service data, based on location, month, day of the week and provides statistics about the most frequented month, day of the week, time; displays mean and total travel time; the most popular start stations, destinations and routes; about the customers of the service (type of customer, gender, most typical year of birth).
+The script filters the provided bikeshare service data, based on location, month, day of the week and provides statistics about the most frequented month, day of the week, time; displays mean and total travel time; the most popular start stations, destinations and routes; about the customers of the service (type of customer, gender, most typical year of birth) and presents consecutive five lines of the raw data.
 
 ### Files used
 Data files:
@@ -15,4 +15,4 @@ chicago.csv, washington.csv, new_york_city.csv
 Script: bikeshare_project_nagy_v2.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Used functions provided by Udacity.
