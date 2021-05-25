@@ -19,7 +19,7 @@ def get_filters():
     while True:
         print('From which city would you like to see data? chicago, new york city, washington')
         city= input().lower()
-        if city == "chicago" or "new york city" or "washington":
+        if city == 'chicago' or 'new york city' or 'new_york_city' or 'new york' or 'washington':
             break
     # TO DO: get user input for month (all, january, february, ... , june)
     print('From which month would you like to see data? \n Please enter january, february, march, april, may, june; \n if you do not want to select a filter please type all')
@@ -211,11 +211,9 @@ def main():
         view_data(city, month, day)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if restart.lower() != 'yes' or 'ye':
             break
 
 
 if __name__ == "__main__":
     main()
-
-    
