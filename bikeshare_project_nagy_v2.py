@@ -19,7 +19,7 @@ def get_filters():
     while True:
         print('From which city would you like to see data? chicago, new york city, washington')
         city= input().lower()
-        if city == "chicago" or "new york city" or "washington":
+        if city == 'chicago' or 'new york city' or 'new_york_city' or 'new york' or 'washington':
             break
     # TO DO: get user input for month (all, january, february, ... , june)
     print('From which month would you like to see data? \n Please enter january, february, march, april, may, june; \n if you do not want to select a filter please type all')
@@ -173,8 +173,7 @@ def user_stats(df):
         print('The youngest customer was born in:', df['Birth Year'].max())
         print('The oldest customer was born in:', df['Birth Year'].min())
         print('The most customers  were born in:', df['Birth Year'].mode()[0])
-        age_of_customer = 2017 - birth_year_of_customer
-        typical_age = age_of_customer.mode()[0]
+        typical_age = (2017 - birth_year_of_customer).mode()[0]
         print('The common age of the customers:', typical_age)
         missing_data = birth_year_of_customer.isnull().sum().sum()
         print('There is no birth data from:', missing_data, 'customers')
@@ -213,7 +212,7 @@ def main():
         view_data(city, month, day)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if restart.lower() != 'yes' or 'ye':
             break
 
 
